@@ -7,7 +7,7 @@ Previous version based on MySQL 5.7 is available in [mysql5.7](https://github.co
 
 ## Run
 
-To run this examples you will need to start containers with "docker-compose" 
+To run this examples you will need to start containers with "docker compose" 
 and after starting setup replication. See commands inside ./build.sh. 
 
 #### Create 2 MySQL containers with master-slave row-based replication 
@@ -33,7 +33,7 @@ docker exec mysql_slave sh -c "export MYSQL_PWD=111; mysql -u root mydb -e 'sele
 #### Check Logs
 
 ```bash
-docker-compose logs
+docker compose logs
 ```
 
 #### Start containers in "normal" mode
@@ -43,7 +43,7 @@ docker-compose logs
 #### Check running containers
 
 ```bash
-docker-compose ps
+docker compose ps
 ```
 
 #### Clean data dir
